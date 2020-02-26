@@ -3,18 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Drum Site</title>
-    <script src="style.js"></script>
+
   </head>
   
   <body style="align-content: center">
+    
 
     <h2>Button testing</h2>
 
     <p>click me</p>
-    <button onmouseover="Press('kick')" or onclick="Press('kick')">Kick!</button>
-    <button onmouseover="Press('clap')" or onclick="Press('clap')"> Clap!</button>
-    <button onmouseover="Press('hihat')" or onclick="Press('hihat')" >Hihat!</button>
-
-    <div id="drum_1"></div>
+    <button id="button-kick">
+      Hi
+      <audio src="kick.wav" id="audio-kick">
+      </audio>
+    </button>
+    <button id="button-clap"> Clap!</button>
+    <button id="button-hihat">Hihat!</button>
+    <script  src="style.js"></script>
   </body>
 </html>
